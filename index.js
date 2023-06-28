@@ -1,7 +1,10 @@
 const express = require("express");
 const axios = require("axios").default;
+const cors = require("cors");
 
 const app = express();
+app.use(express.json());
+app.use(cors());
 
 const unsplashAccessKey = "Uffd5I4F_ngX6I9BBtbtB_tEeZtfi-uHAUV00M5o1-4";
 const unsplashSecretKey = "mjbc5NN-idGRdioO6PmWUJftc3igRS2DXTzQUcHiIM8";
